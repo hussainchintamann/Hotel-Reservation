@@ -1,14 +1,20 @@
 import React from "react";
 import { service } from "../component/Data/data";
 import './style.css'
+import CommonHeading from "../component/CommanHeading";
 function Service() {
   return (
     <>
       <div className="container-xxl py-5">
         <div className="container">
+        <CommonHeading
+              heading="Our Services"
+              title="Services"
+              subtitle="Explore Our"
+            />
           <div className="row g-4">
             {
-              service.map((el,index)=>(
+              service.map((el)=>(
                <div className="col-lg-4 col-md-6 ">
                  <a className="service-item rounded " href="">
                  <div className="service-icon bg-transparent border rounded p-1">

@@ -2,12 +2,18 @@ import React from "react";
 import { facilty, roomItem } from "../component/Data/data";
 import { Link } from "react-router-dom";
 import BookNow from "./BookNow";
+import CommonHeading from "../component/CommanHeading";
 
 function Rooms() {
   return (
     <div>
       <div className="container-xxl py-5">
         <div className="container">
+        <CommonHeading
+            heading="Our Rooms"
+            title="Rooms"
+            subtitle="Explore Our"
+          />
           <div className="row g-4">
             {roomItem.map((el) => (
               <div className="col-lg-4 col-md-6">

@@ -35,17 +35,17 @@ export const carouseldata = [
 
 export const socialIcon =[
   {
-   icon:<i><FaFacebook /></i>
+   icon:<i className="text-white" style={{fontSize:'13px'}}><FaFacebook /></i>
   },
   {
-    icon:<i><FaWhatsapp /> </i>
+    icon:<i  className="text-white" style={{fontSize:'13px'}}><FaWhatsapp /> </i>
    },
    {
-    icon:<i><FaLinkedin />
+    icon:<i  className="text-white" style={{fontSize:'13px'}}><FaLinkedin />
 </i>
    },
    {
-    icon:<i><FaYoutube />
+    icon:<i  className="text-white" style={{fontSize:'13px'}}><FaYoutube />
 </i>
    },
 
@@ -54,7 +54,7 @@ export const socialIcon =[
 export const roomItem = [
   {
     id: 1,
-    img: "./src/blog1 (1).jpg",
+    img: "./src/room1.jpg",
     price: "$100/night",
     name: "junior suit",
     star: [
@@ -81,7 +81,7 @@ export const roomItem = [
   },
   {
     id: 2,
-    img: "./src/blog1 (2).jpg",
+    img: "./src/room2.jpg",
     price: "$300/night",
     name: "junior suit",
     star: [
@@ -109,7 +109,7 @@ export const roomItem = [
 
   {
     id: 3,
-    img: "./src/blog1 (2).jpg",
+    img: "./src/room3.jpg",
     price: "$200/night",
     name: "junior suit",
     star: [
@@ -204,51 +204,51 @@ export const service = [
 ]
  export const testimonial= [
   {
-    img1:'./src/blog1 (1).jpg',
+    
     description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, corporis Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, corporis .',
     name:'Client Name',
     profession:'Professions',
     icon: <i className="text-warning position-absolute end-0 bottom-0 me-4"><FaQuoteRight/></i>,
-    img:'./src/blog1 (1).jpg',
+    img:'./src/profile3.jpg',
   },
   {
     description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, corporis Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, corporis .',
     name:'Client Name',
     profession:'Professions',
     icon: <i className="text-warning position-absolute end-0 bottom-0 me-4"><FaQuoteRight/></i>,
-    img:'./src/blog1 (2).jpg',
+    img:'./src/profile4.jpg',
   },
   {
     description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, corporis Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, corporis .',
     name:'Client Name',
     profession:'Professions',
     icon: <i className="text-warning position-absolute end-0 bottom-0 me-4"><FaQuoteRight/></i>,
-    img:'./src/blog1 (3).jpg',
+    img:'./src/profile5.jpg',
   },
  ]
 
  export const team = [
   {
-    img:'./src/blog1 (3).jpg',
+    img:'./src/profile2.jpg',
     name:'Full Name',
     designation :'Designation',
     icon:'',
     
   },
   {
-    img:'./src/blog1 (3).jpg',
+    img:'./src/profile5.jpg',
     name:'Full Name',
     designation :'Designation',
     icon:'',
   },
   {
-    img:'./src/blog1 (3).jpg',
+    img:'../src/profile2.jpg',
     name:'Full Name',
     designation :'Designation',
     icon:'',
   },
   {
-    img:'./src/blog1 (3).jpg',
+    img:'./src/profile4.jpg',
     name:'Full Name',
     designation :'Designation',
     icon:'',

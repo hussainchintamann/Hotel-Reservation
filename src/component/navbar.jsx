@@ -6,38 +6,72 @@ function Navbar() {
   
   const userName = JSON.parse(localStorage.getItem('user'))
   
-  // const handlerLogout = ()=>{
-  //   localStorage.removeItem("loggedIn")
-  //   navigate('/login')
-  // }
+  
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar  navbar-expand-lg bg-black fixed-top ">
   <div className="container-fluid">
-    <Link className="navbar-brand" href="#">Navbar</Link>
+    <Link className="navbar-brand text-white" href="#">HOTELIER</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <Link to={'/'} className="nav-link active" aria-current="page" href="#">Home</Link>
-        </li>
-        <li className="nav-item">
-          <Link to={'rooms'} className="nav-link" href="#">Rooms</Link>
-        </li>
-        <li className="nav-item">
-          <Link to={'service'} className="nav-link" href="#">Service</Link>
+      <ul className="navbar-nav me-auto mb-2   mb-lg-0" >
+        <li className="nav-item " >
+          <Link to={'/'} className="nav-link active text-white" aria-current="page" href="#">Home</Link>
         </li>
        
         <li className="nav-item">
-          <Link className="nav-link " to={'Slider'}>Testimonial</Link>
+          <Link to={'service'} className="nav-link text-white" href="#">Service</Link>
+        </li>
+        <li className="nav-item">
+          <Link to={'rooms'} className="nav-link text-white " href="#">Rooms</Link>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+          <li>
+          <Link className=" dropdown-item " to={'Slider'}>Testimonial</Link>
+        </li>
+            <li><Link class="dropdown-item" to={'Team'}>Our Team</Link></li>
+      
+          </ul>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link text-white " to={'contact'}>Contact</Link>
         </li>
       </ul>
-     
+      <form class="d-flex">
+        
+      </form>
     </div>
   </div>
 </nav>
+
+{/* <nav className="navbar">
+            <div>
+                <p className="brand-name">HOTELIER</p>
+            </div>
+            <ul className="nav-list">
+                <li className="nav-item">Home</li>
+                <li className="nav-item">About</li>
+                <li className="nav-item">Services</li>
+                <li className="nav-item">Rooms</li>
+                <li 
+                    className="nav-item dropdown" 
+                    onMouseEnter={() => setShowDropdown(true)} 
+                    onMouseLeave={() => setShowDropdown(false)}
+                >
+                    Pages <span className="dropdown-arrow">▼</span>
+                    {showDropdown && <DropdownMenu />}
+                </li>
+                <li className="nav-item">Contact</li>
+
+            </ul>
+        </nav> */}
     </div>
   )
 }

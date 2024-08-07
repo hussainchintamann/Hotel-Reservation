@@ -14,6 +14,9 @@ import Protectedroutes from './assets/services/Protectedroutes'
 import RoomDetail from './Home/RoomDetail'
 import BookNow from './Home/BookNow'
 
+import Newsletterpage from './assets/pages/Newsletterpage'
+import Footer from './component/Footer'
+
 function App() {
   
   const handleClick = (item)=>{
@@ -34,8 +37,11 @@ function App() {
      <Route path='Service' element ={<Servicepage/>}/>
      <Route path='Slider' element ={<Sliderpage/>}/>
      <Route path='Team' element ={<Teampage/>}/>
+     <Route path='Contact' element ={<Newsletterpage/>}/>
      </Route>
      </Routes>
+
+     <Footer/>
     </>
   )
 }
