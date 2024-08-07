@@ -35,7 +35,7 @@ function Team() {
                     </div>
                   </div>
 
-                  <div className="p-4 mt-5">
+                  <div className="p-3 mt-5">
                     <div style={{ textAlign: "center" }}>
                       <h5>{el.name}</h5>
                       <p>{el.designation}</p>
