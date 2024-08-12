@@ -1,10 +1,16 @@
 import React from "react";
 import { facilty, roomItem } from "../component/Data/data";
-import { Link } from "react-router-dom";
-import BookNow from "./BookNow";
+import { Link, useNavigate } from "react-router-dom";
 import CommonHeading from "../component/CommanHeading";
 
+
 function Rooms() {
+
+  const navigate = useNavigate()
+  const handleclick= ()=>{
+    alert('Thanks For Booking', navigate('/contact') )
+    
+  }
   return (
     <div>
       <div className="container-xxl py-5">
@@ -38,19 +44,13 @@ function Rooms() {
                         </small>
                       ))}
                     </div>
+                    
                     <p className="text-body mb-3">{el.description}</p>
-                    <Link
-                      to={`/booking/${el.id}`}
-                      className="btn btn-sm btn-dark rounded py-2 px-4 "
-                    >
+                    
+                    <Link className="btn btn-dark" onClick={handleclick}>
                       {el.darkbtn}
                     </Link>
-                    <Link
-                      to={`/rooms/${el.id}`}
-                      className="btn btn-sm btn-warning rounded py-2 px-4"
-                    >
-                      {el.yellowbtn}
-                    </Link>
+                   
                   </div>
                 </div>
               </div>

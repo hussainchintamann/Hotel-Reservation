@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function CommonHeading({ heading, title, subtitle }) {
     return (
       <>

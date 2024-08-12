@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import { Route, Routes } from 'react-router-dom'
 import Home from './Home/Home'
 import Navbar from './component/navbar'
@@ -11,7 +9,7 @@ import Teampage from './assets/pages/Teampage'
 import Login from './component/Login'
 import Register from './component/Register'
 import Protectedroutes from './assets/services/Protectedroutes'
-import RoomDetail from './Home/RoomDetail'
+// import RoomDetail from './Home/RoomDetail'
 import BookNow from './Home/BookNow'
 
 import Newsletterpage from './assets/pages/Newsletterpage'
@@ -19,9 +17,7 @@ import Footer from './component/Footer'
 
 function App() {
   
-  const handleClick = (item)=>{
-  console.log(item)
-  }
+ 
 
   return (
     <>
@@ -32,7 +28,7 @@ function App() {
       <Route path='/' element={<Protectedroutes/>}>
      <Route path='/' element ={<Home/>}/>
      <Route path='Rooms' element ={<Roompage/>}/>
-     <Route path='Room/:RoomId' element={<RoomDetail  handleClick={handleClick}/>} />
+     {/* <Route path='Room/:RoomId' element={<RoomDetail  handleClick={handleClick}/>} /> */}
      <Route path='Room/:bookId'element={<BookNow/>} />
      <Route path='Service' element ={<Servicepage/>}/>
      <Route path='Slider' element ={<Sliderpage/>}/>

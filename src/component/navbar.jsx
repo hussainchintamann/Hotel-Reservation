@@ -4,32 +4,32 @@ import { Link,  } from 'react-router-dom'
 
 function Navbar() {
   
-  const userName = JSON.parse(localStorage.getItem('user'))
+  // const userName = JSON.parse(localStorage.getItem('user'))
   
   
   return (
     <div>
       <nav className="navbar  navbar-expand-lg bg-black fixed-top ">
   <div className="container-fluid">
-    <Link className="navbar-brand text-white" href="#">HOTELIER</Link>
+    <Link className="navbar-brand text-white">HOTELIER</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2   mb-lg-0" >
         <li className="nav-item " >
-          <Link to={'/'} className="nav-link active text-white" aria-current="page" href="#">Home</Link>
+          <Link to={'/'} className="nav-link active text-white" aria-current="page">Home</Link>
         </li>
        
         <li className="nav-item">
-          <Link to={'service'} className="nav-link text-white" href="#">Service</Link>
+          <Link to={'service'} className="nav-link text-white">Service</Link>
         </li>
         <li className="nav-item">
-          <Link to={'rooms'} className="nav-link text-white " href="#">Rooms</Link>
+          <Link to={'rooms'} className="nav-link text-white ">Rooms</Link>
         </li>
         
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-white" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
           </a>
           <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
